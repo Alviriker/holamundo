@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function mostrarPar(numero, VALOR_PAR, LIMITE_PAR) {
+      while (numero > LIMITE_PAR) {
+        numero = numero - VALOR_PAR;
+        document.write(numero + "<br>");
+      }
+    }
+
+    function mostrarImpar(numero, VALOR_IMPAR, LIMITE_IMPAR) {
+      while (numero > LIMITE_IMPAR) {
+        numero = numero - VALOR_IMPAR;
+        document.write(numero + "<br>")
+      }
+    }
+
+    function mostrar(numero, valor, limite) {
+      while (numero > limite) {
+        numero = numero - valor;
+        document.write(numero + "<br>")
+      }
+    }
+
+
+
+    const MSG = " El usuario introduce ";
+    const VALOR_IMPAR = 1;
+    const LIMITE_IMPAR = 1;
+    const VALOR_PAR = 2;
+    const LIMITE_PAR = 0;
+    const MSG_PAR = "El usuario introduce";
+
+    let numero = prompt(MSG);
+  
+
+
+    if (numero % 2 == 0) {
+      mostrar(numero, VALOR_PAR, LIMITE_PAR);
+    } else {
+      mostrar(numero, VALOR_IMPAR, LIMITE_IMPAR);   
+    } 
+  </script>
+</body>
+
+</html>
